@@ -1,4 +1,4 @@
-"""Test modul"""
+"""Test module."""
 
 import pytest
 
