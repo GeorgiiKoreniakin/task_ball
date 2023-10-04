@@ -15,7 +15,7 @@ def degree(time: float, acc: float, rad: float, vel: float = 0) -> float:
     Returns:
         float: angle of deflection
     """
-    #lenght of circle
+    # Lenght of circle
     circle = 360
 
     # Calculating the angular displacement
