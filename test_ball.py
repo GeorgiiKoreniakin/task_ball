@@ -13,4 +13,10 @@ test_data = (
 
 @pytest.mark.parametrize('source, expected', test_data)
 def test_ball(source: tuple[float], expected: float):
+    """testing.
+
+    Args:
+        source (tuple[float]): data
+        expected (float): expected values
+    """
     assert degree(*source) == expected

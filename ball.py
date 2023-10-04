@@ -15,16 +15,19 @@ def degree(time: float, acc: float, rad: float, vel: float = 0) -> float:
     Returns:
         float: angle of deflection
     """
+    #lenght of circle
+    circle = 360
+
     # Calculating the angular displacement
-    S = vel * time + (acc * time ** 2) / 2
+    way = vel * time + (acc * time ** 2) / 2
 
     # Calculate the circumference using the formula C = 2*pi*r
-    C = 2 * math.pi * rad
+    lenght = 2 * math.pi * rad
 
     # Calculate the angle in radians
-    radians = S / C
+    radians = way / lenght
 
     # Convert the angle from radians to degrees
-    degrees = 360 * abs(math.floor(radians) - radians)
+    degrees = circle * abs(math.floor(radians) - radians)
 
     return round(degrees, 2)
